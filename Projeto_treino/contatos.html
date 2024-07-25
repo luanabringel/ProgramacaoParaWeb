@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Programação para Web I</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class= "logo">Programação para web I</h1>
+        <nav class="menu-principal">
+            <button class="menu-principal__btn">Abrir/fechar Menu</button>
+            <ul class="menu-principal__lista">
+                <li><a class="menu-principal__item" href="index.html">Home</a></li>
+                <li><a class="menu-principal__item" href="sobre.html">Sobre Programação para Web I</a></li>
+                <li><a class="menu-principal__item" href="tematicas.html">Temáticas</a></li>
+                <li><a class="menu-principal__item menu-principal__item--atual" href="contatos.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <header><h1>Contato</h1></header>
+        </article>
+        <section>
+            <p>Entrar em contato com o professor da disciplina.</p>
+            <form action="#">
+                <div>
+                    <label for="nome">Nome</label><br>
+                    <input id = "nome" type="text" name="nome">
+                </div>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input id = "email" type="email" name="email">
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem</label><br>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15831.32793719356!2d-35.88251364999999!3d-7.25995435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1720724080045!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>      
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="rodape__linha-1">
+            <div class="rodape__coluna">
+                <a href="index.html">Programação para Web I</a>
+                <p>O objetivo geral do curso é proporcionar ao estudante uma introdução às linguagens e tecnologias fundamentais da web (frontend): HTML, CSS, JavaScript, HTTP e o browser.</p>
+            </div>
+            <div class="rodape__coluna">
+                <h2 class="rodape__titulo">Informações Gerais</h2>
+                <ul class="rodape__lista-links">
+                    <li class="rodape__lista-links__item"><a href="https://www.computacao.ufcg.edu.br/unidade-acad%C3%AAmica">Unidade Acadêmica de Sistemas e Computação</a></li>
+                    <li class="rodape__lista-links__item"><a href="https://www.computacao.ufcg.edu.br/graduacao">Graduação</a></li>
+                    <li class="rodape__lista-links__item"><a href="https://www.computacao.ufcg.edu.br/mestrado-e-doutorado">Pós-Graduação</a></li>
+                    <li class="rodape__lista-links__item"><a href="https://www.computacao.ufcg.edu.br/servi%C3%A7os">Serviços</a></li>
+                </ul>
+            </div>
+            <div class="rodape__coluna">
+                <h2 class="rodape__titulo">Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre Programação para Web I</a></li>
+                    <li><a href="tematicas.html">Temáticas</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rodape__linha-2">
+            <p>Todos os direitos reservados PW.</p>
+        </div>
+    </footer>
+</body>
+</html>

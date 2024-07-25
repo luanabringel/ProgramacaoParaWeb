@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!--width: largura para se adaptar ao dispositivo-->
+    <!--initial-scale: definido como 1.0 para não iniciar com zoom-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Programação para Web I</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class= "logo">Programação para web I</h1>
+        <nav class="menu-principal">
+            <button class="menu-principal__btn">Abrir/fechar Menu</button>
+            <ul class="menu-principal__lista">
+                <li><a class="menu-principal__item" href="index.html">Home</a></li>
+                <li><a class="menu-principal__item" href="sobre.html">Sobre Programação para Web I</a></li>
+                <li><a class="menu-principal__item menu-principal__item--atual" href="tematicas.html">Temáticas</a></li>
+                <li><a class="menu-principal__item" href="contatos.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <header class="pagina-cabecalho"><h1 class="pagina-cabecalho__titulo">Sobre Programação para Web I</h1></header>
+            <h1>Temáticas</h1>
+        </header>
+        <section class="pagina-conteudo">
+            <p class="text-center">
+                As temáticas da programação web incluem: <br> 
+                HTML/CSS: Estruturação e estilização de páginas web; <br> 
+                JavaScript: Interatividade e dinamismo em sites; Backend: Desenvolvimento do servidor e banco de dados (ex.: Node.js, PHP, Python); <br>Frameworks: Ferramentas que facilitam o desenvolvimento (ex.: React, Angular, Vue.js); <br> 
+                Responsividade: Design adaptável para diferentes dispositivos e tamanhos de tela.
+            </p>
+            <nav>
+                <ul class="lista-tematicas">
+                    <li class="lista-tematicas__item">
+                        <a href="img/html.png">
+                            <img src="img/html.png" alt="html">
+                            <h2 class="lista-tematicas__titulo">HTML</h2>
+                        </a>
+                    </li>
+                    <li class="lista-tematicas__item">
+                        <a href="img/css.png">
+                            <img src="img/css.png" alt="css">
+                            <h2 class="lista-tematicas__titulo">CSS</h2>
+                        </a>
+                    </li>
+                    <li class="lista-tematicas__item">
+                        <a href="img/javascript.png">
+                            <img src="img/javascript.png" alt="javascript">
+                            <h2 class="lista-tematicas__titulo">JAVASCRIPT</h2>
+                        </a>
+                    </li>
+                    <li class="lista-tematicas__item">
+                        <a href="img/dom.png">
+                            <img src="img/dom.png" alt="dom">
+                            <h2 class="lista-tematicas__titulo">DOM</h2>
+                        </a>
+                    </li>
+                    <li class="lista-tematicas__item">
+                        <a href="img/sass.png">
+                            <img src="img/sass.png" alt="sass">
+                            <h2 class="lista-tematicas__titulo">SASS</h2>
+                        </a>
+                    </li>
+                    <li class="lista-tematicas__item">
+                        <a href="img/ajax.png">
+                            <img src="img/ajax.png" alt="ajax">
+                            <h2 class="lista-tematicas__titulo">AJAX</h2>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="rodape__linha-1">
+            <div class="rodape__coluna">
+                <a href="index.html">Programação para Web I</a>
+                <p>O objetivo geral do curso é proporcionar ao estudante uma introdução às linguagens e tecnologias fundamentais da web (frontend): HTML, CSS, JavaScript, HTTP e o browser.</p>
+            </div>
+            <div class="rodape__coluna">
+                <h2 class="rodape__titulo">Informações Gerais</h2>
+                <ul class="rodape__lista-links">
+                    <li class="rodape__lista-links__item"><a href="https://www.computacao.ufcg.edu.br/unidade-acad%C3%AAmica">Unidade Acadêmica de Sistemas e Computação</a></li>
+                    <li class="rodape__lista-links__item"><a href="https://www.computacao.ufcg.edu.br/graduacao">Graduação</a></li>
+                    <li class="rodape__lista-links__item"><a href="https://www.computacao.ufcg.edu.br/mestrado-e-doutorado">Pós-Graduação</a></li>
+                    <li class="rodape__lista-links__item"><a href="https://www.computacao.ufcg.edu.br/servi%C3%A7os">Serviços</a></li>
+                </ul>
+            </div>
+            <div class="rodape__coluna">
+                <h2 class="rodape__titulo">Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre Programação para Web I</a></li>
+                    <li><a href="tematicas.html">Temáticas</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rodape__linha-2">
+            <p>Todos os direitos reservados PW.</p>
+        </div>
+    </footer>
+</body>
+</html>

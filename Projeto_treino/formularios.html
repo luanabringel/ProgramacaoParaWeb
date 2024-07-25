@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#"> <!-- Destino para onde mandar os dados -->
+        <div>
+            <label for="primeironome">Primeiro Nome</label>
+            <input id= "primeironome" type="text" name="Primeironome"><br>
+        </div>
+        <div>
+            <label for="receberEmail">Deseja receber emails do professor: </label>
+            <input id = "receberEmail" type="checkbox" name="receberEmails"><br>
+        </div>
+        <div>
+            <label>Matriculado:</label><br>
+            <input id = "sim" type="radio" name="matriculado" value="sim">
+            <label for="sim">SIM</label><br>
+            <input id = "não" type="radio" name="matriculado" value="não">
+            <label for="NÃO">NÃO</label><br>
+            <input id = "trancado" type="radio" name="matriculado" value="trancado">
+            <label for="trancado">Trancado</label><br>
+
+            <label for="periodo">Período:</label>
+            <select name="periodo" id="periodo">
+                <option value="2023.1">2023.1</option>
+                <option value="2023.2">2023.2</option>
+                <option value="2024.1">2024.1</option>
+            </select>
+
+            <label for="observacoes"></label>Observações:<br>
+            <textarea name="observacoes" id="observacoes" cols="20" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
