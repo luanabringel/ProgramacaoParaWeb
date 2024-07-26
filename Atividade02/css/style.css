@@ -169,8 +169,15 @@ img{
 }
 
 .lista-tematicas{
+    display: grid;
     list-style: none;
-    padding: 0;
+    padding-left: 290px;
+    padding-top: 90px;
+    grid-template-columns: 200px 100px 200px;
+    grid-template-rows: 280px auto 280px; 
+    column-gap: 100px;
+    row-gap: 50px;
+    align-items: end;
 }
 
 .lista-tematicas__item{
@@ -186,5 +193,34 @@ img{
     color: #000;
     font-size: 18px;
     margin-left: 15px;
-    margin-left: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+.lista-tematicas__item:nth-child(1) a img{
+    height: 280px;
+    width: 200px;
+}
+
+.lista-tematicas__item:nth-child(2) a img{
+    height: 280px;
+    
+}
+
+.lista-tematicas__item:nth-child(3) a img{
+    height: 250px;
+    width: 170px;
+}
+
+.lista-tematicas__item:nth-child(4) a img{
+    height: 130px;
+    padding-left: 50px;
+}
+
+.lista-tematicas__item:nth-child(5) a img{
+    height: 130px;
+}
+
+.lista-tematicas__item:nth-child(6) a img{
+    height: 130px;
+    padding-left: 15px;
 }
