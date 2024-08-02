@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+    <script>
+        function fatorial(){
+            var list = document.getElementById("txtList").value;
+            list = list.split(",");
+            list_result = [];
+
+            for (var i = 0; i < list.length; i++){
+                var num = parseInt(list[i]);
+                var fatorial = num;
+
+                while (num > 1){
+                    num--;
+                    fatorial *= num;
+                }
+                list_result.push(fatorial);
+            }
+            document.write("Fatorial de cada número: " + list_result);
+        }
+    </script>
+</head>
+
+    <body>
+        Lista de números: <input type="text" id="txtList">
+        <input type="button" value="Fatorial" onclick="fatorial()">
+    </body>
+</html>

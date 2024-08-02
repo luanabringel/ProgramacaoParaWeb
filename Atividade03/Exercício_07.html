@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+    <script>
+        function imparesMultiplosDeTres(){
+            var list = document.getElementById("txtList").value;
+            list = list.split(",");
+
+            var cont = 0
+            for (var i = 0; i < list.length; i++){
+                if(parseInt(list[i]) % 2 != 0 && parseInt(list[i]) % 3 == 0){
+                    cont += parseInt(list[i])
+                    }
+                }
+            document.write("Somatório dos ímpares múltiplos de três: " + cont);
+        }
+    </script>
+</head>
+
+    <body>
+        Lista de números: <input type="text" id="txtList">
+        <input type="button" value="Somatório dos múltiplos de três" onclick="imparesMultiplosDeTres()">
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+    <script>
+        function ordemCrescente(){
+            var list = document.getElementById("txtList").value;
+            list = list.split(",");
+
+            for (var i = 0; i < list.length; i++){
+                for(var j = i+1; j < list.length; j++){
+                    if(parseInt(list[i]) > parseInt(list[j])){
+                        aux = list[i];
+                        list[i] = list[j];
+                        list[j] = aux;
+                    }
+                }
+            }
+            document.write("Ordenado de forma crescente: " + list);
+        }
+    </script>
+</head>
+
+    <body>
+        Lista de números: <input type="text" id="txtList">
+        <input type="button" value="Ordem crescente" onclick="ordemCrescente()">
+    </body>
+</html>

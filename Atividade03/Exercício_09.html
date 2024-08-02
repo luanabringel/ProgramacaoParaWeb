@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+    <script>
+        function mediaAritmeticaQuantidadePercentuais(){
+            var list = document.getElementById("txtList").value;
+            list = list.split(",");
+
+            var media = 0;
+            var percentualPositivos = 0;
+            var percentualNegativos = 0;
+            var qntPositivos = 0;
+            var qntNegativos = 0;
+
+            for (var i = 0; i < list.length; i++){
+                var num = parseInt(list[i]);
+                media += num;
+
+                if(num >= 0){
+                    qntPositivos += 1;
+                } else{
+                    qntNegativos += 1;
+                }
+            }
+
+            media = media/parseInt(list.length);
+            percentualNegativos = (qntNegativos/list.length) * 100 + "%";
+            percentualPositivos = (qntPositivos/list.length) * 100 + "%";
+
+            document.write("Média aritmética: " + media + "<br>");
+            document.write("Quantidade de números positivos: " + qntPositivos + "<br>");
+            document.write("Quantidade de números negativos: " + qntNegativos + "<br>");
+            document.write("Percentual de números positivos: " + percentualPositivos + "<br>");
+            document.write("Percentual de números negativos: " + percentualNegativos + "<br>");
+        }
+    </script>
+</head>
+
+    <body>
+        Lista de números: <input type="text" id="txtList">
+        <input type="button" value="Análise dos números" onclick="mediaAritmeticaQuantidadePercentuais()">
+    </body>
+</html>

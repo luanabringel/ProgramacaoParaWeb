@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+    <script>
+        function inverterLista(){
+            var list = document.getElementById("txtList").value;
+            list = list.split(",");
+
+            var i = 0;
+            var j = list.length - 1;
+            while(i <= list.length/2 && j >= list.length/2){
+                aux = list[i];
+                list[i] = list[j];
+                list[j] = aux;
+
+                i++;
+                j--;
+            }
+
+            document.write("Lista com valores invertidos: " + list);
+        }
+    </script>
+</head>
+
+    <body>
+        Lista de números: <input type="text" id="txtList">
+        <input type="button" value="Inverter valores da lista" onclick="inverterLista()">
+    </body>
+</html>
