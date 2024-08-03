@@ -17,14 +17,22 @@
             return true;
         }
 
+        // Função para mostrar o resultado
+        function mostrarResultado(resultado) {
+            var resultadoDiv = document.getElementById("resultado");
+            resultadoDiv.innerHTML = resultado;
+        }
+
         // Exercício 01
         function calcularQuadrados(){
             var numeros = document.getElementById("txtList").value;
             numeros = numeros.split(",");
+            var resultado = '';
             for (var i = 0; i < numeros.length; i++){
                 var quadrado = parseInt(numeros[i]) * parseInt(numeros[i]);
-                document.write("O quadrado de " + numeros[i] + " é " + quadrado);
+                resultado += "O quadrado de " + numeros[i] + " é " + quadrado + "<br>";
             }
+            mostrarResultado(resultado);
         }
 
         // Exercício 02
@@ -37,7 +45,7 @@
                     maior = parseInt(numeros[i]);
                 }
             }
-            document.write("O maior número digitado é: " + maior);
+            mostrarResultado("O maior número digitado é: " + maior);
         }
 
         // Exercício 03
@@ -52,17 +60,14 @@
                 else
                     menor18++;
             }
-            document.write("Quantidade de maiores: " + maior18 + "<br>");
-            document.write("Quantidade de menores: " + menor18 );
+            mostrarResultado("Quantidade de maiores: " + maior18 + "<br>Quantidade de menores: " + menor18);
         }
 
         // Exercício 04
         function separarDiaMesAno(){
             var data = document.getElementById("txtList").value;
             data = data.split("/");
-            document.write("O dia é: " + data[0]);
-            document.write("O mês é: " + data[1]);
-            document.write("O ano é: " + data[2]);
+            mostrarResultado("O dia é: " + data[0] + "<br>O mês é: " + data[1] + "<br>O ano é: " + data[2]);
         }
 
         // Exercício 05
@@ -72,7 +77,7 @@
             for (var i = texto.length - 1; i >= 0; i--){
                 textoAux += texto[i];
             }
-            document.write("String invertida: " + textoAux);
+            mostrarResultado("String invertida: " + textoAux);
         }
 
         // Exercício 06
@@ -88,7 +93,7 @@
                     }
                 }
             }
-            document.write("Ordenado de forma crescente: " + list);
+            mostrarResultado("Ordenado de forma crescente: " + list);
         }
 
         // Exercício 07
@@ -101,7 +106,7 @@
                     cont += parseInt(list[i]);
                 }
             }
-            document.write("Somatório dos ímpares múltiplos de três: " + cont);
+            mostrarResultado("Somatório dos ímpares múltiplos de três: " + cont);
         }
 
         // Exercício 08
@@ -118,7 +123,7 @@
                 }
                 list_result.push(fatorial);
             }
-            document.write("Fatorial de cada número: " + list_result);
+            mostrarResultado("Fatorial de cada número: " + list_result);
         }
 
         // Exercício 09
@@ -142,11 +147,7 @@
             media = media/parseInt(list.length);
             percentualNegativos = (qntNegativos/list.length) * 100 + "%";
             percentualPositivos = (qntPositivos/list.length) * 100 + "%";
-            document.write("Média aritmética: " + media);
-            document.write("Quantidade de números positivos: " + qntPositivos);
-            document.write("Quantidade de números negativos: " + qntNegativos);
-            document.write("Percentual de números positivos: " + percentualPositivos);
-            document.write("Percentual de números negativos: " + percentualNegativos);
+            mostrarResultado("Média aritmética: " + media + "<br>Quantidade de números positivos: " + qntPositivos + "<br>Quantidade de números negativos: " + qntNegativos + "<br>Percentual de números positivos: " + percentualPositivos + "<br>Percentual de números negativos: " + percentualNegativos);
         }
 
         // Exercício 10
@@ -162,11 +163,12 @@
                 i++;
                 j--;
             }
-            document.write("Lista com valores invertidos: " + list);
+            mostrarResultado("Lista com valores invertidos: " + list);
         }
     </script>
 </head>
-<div class="input__entrada">
+<body class="body">
+    <div class="input__entrada">
         Digite a entrada: <input class="input__texto" type="text" id="txtList">
     </div>
     <div class="botoes__exercicios">
@@ -180,5 +182,7 @@
         <input class="botao" type="button" value="Exercício 08" onclick="if (verificarEntrada()) calcularFatorial()">
         <input class="botao" type="button" value="Exercício 09" onclick="if (verificarEntrada()) mediaAritmeticaQuantidadesPercentuais()">
         <input class="botao" type="button" value="Exercício 10" onclick="if (verificarEntrada()) inverterLista()">
+    </div>
+    <div id="resultado" class="resultados"></div>
 </body>
 </html>

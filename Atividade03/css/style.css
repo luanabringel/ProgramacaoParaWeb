@@ -1,3 +1,7 @@
+.body{
+    background: #fbf8fd;
+}
+
 .input__entrada{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
@@ -47,4 +51,5 @@ input:focus {
 .resultados{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px;
 }
