@@ -1,0 +1,50 @@
+.input__entrada{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    color: rgb(50, 50, 51);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 395px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #bf87ec;
+    box-shadow: 0 0 5px rgba(184, 151, 245, 0.6);
+}
+
+.input__texto{
+    width: 250px;
+    height: 15px;
+    font-family: "Source Sans Pro";
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.botoes__exercicios{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 10px;
+    font-size: small;
+    height: 65px;
+}
+
+.botao{
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.botao:hover{
+    transform: translateY(-5px);
+}
+
+.resultados{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
